@@ -1,3 +1,11 @@
+.pointercrate{
+    position: fixed;
+    width: 500px;
+    border: 10px solid;
+    border-color: black;
+    border-style: groove;
+    margin-left: 54%;
+}
 .main {
     position: fixed;
     max-width: 700px;
