@@ -1,0 +1,70 @@
+body {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    background-image: url(5197239.svg);
+    background-size: cover;
+    color: white;
+}
+.noBg {
+    margin-left: 310px;
+}
+.container {
+    max-width: 900px;
+    text-align:justify;
+    padding: 20px;
+    margin-left: 23%;
+}
+h1 {
+    text-align: center;
+}
+.hardest2Index{
+    color: black;
+    margin-top: 20px;
+    margin-left: 26%;
+    position: absolute;
+}
+form {
+    text-align: center;
+}
+select,
+input[type="checkbox"] {
+    margin: 10px; 
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    margin: 5px auto; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    max-width: 600px; 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+li h3 {
+    margin: 0;
+    font-size: 1.2em;
+    flex: 1;
+}
+li p {
+    margin: 5px;
+}
+iframe {
+    width: 300px;
+    height: 169px;
+    margin-right: 20px;
+}
+.info {
+    flex: 1;
+    margin-left: 10px;
+}
+@media (max-width: 300px) {
+    li {
+        flex-direction: column;
+    }
+}

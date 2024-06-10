@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hardest Completions</title>
+    <link rel="stylesheet" href="stylesHard.css">
+    
+</head>
+<button onclick="document.location='../'" class="hardest2Index">Return To Home</button>
+<body>
+    <h1>My Hardest Completions</h1>
+    <div class="container">
+        <label for="sortCriteria">Sort by: </label>
+        <select id="sortCriteria" onchange="sortList(this.value)">
+            <option value="hard">Difficulty</option>
+            <option value="dateOldest">Oldest</option>
+            <option value="dateMostRecent">Newest</option>
+        </select>
+        <label for="difficultyDropdown">Difficulty: </label>
+        <select id="difficultyDropdown" onchange="changeDifficulty()">
+            <option value="imo">My Opinion</option>
+            <option value="aredlDifficulty">Aredl (+more)</option>
+        </select>
+        <label for="demonFilter">Show only extremes (including Phonk Town): </label>
+        <input type="checkbox" id="filterRated" onclick="toggleFilter()">
+    </div>
+    <ul id="completionList">
+    </ul>
+    <script src="scripts.js"></script>
+</body>
+</html>
