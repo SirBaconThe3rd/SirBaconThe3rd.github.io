@@ -48,7 +48,7 @@ const completions = [
     "name": "Reflective",
     "imo": 6,
     "aredlDifficulty": 5,
-    "date": "02/01/23",
+    "date": "2023-02-01",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/Uf3pEUz-HV4",
     "description": "One of my favs <3 although fuck you for motivating me to play deflective after"
@@ -75,7 +75,7 @@ const completions = [
     "name": "TROLLMACHINE",
     "imo": 9,
     "aredlDifficulty": 6,
-    "date": "07/04/23",
+    "date": "2023-07-04",
     "type": "TRUE",
     "video": "NA",
     "description": "Recording of completion corrupted"
@@ -111,7 +111,7 @@ const completions = [
     "name": "Niwa",
     "imo": 13,
     "aredlDifficulty": 14,
-    "date": "03/12/23",
+    "date": "2023-12-03",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/QAWbnnUd3z4",
     "description": ""
@@ -129,7 +129,7 @@ const completions = [
     "name": "Lost Love",
     "imo": 15,
     "aredlDifficulty": 12,
-    "date": "05/03/24",
+    "date": "2024-05-03",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/D4HwSEWZpLA",
     "description": ""
@@ -138,7 +138,7 @@ const completions = [
     "name": "Penumbra",
     "imo": 16,
     "aredlDifficulty": 19,
-    "date": "02/12/23",
+    "date": "2023-12-02",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/hfaPtPdnTNs",
     "description": ""
@@ -165,7 +165,7 @@ const completions = [
     "name": "Thanatophobia",
     "imo": 19,
     "aredlDifficulty": 18,
-    "date": "04/12/22",
+    "date": "2022-12-04",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/vTdWlbenymY",
     "description": ""
@@ -174,7 +174,7 @@ const completions = [
     "name": "The End",
     "imo": 20,
     "aredlDifficulty": 17,
-    "date": "NA",
+    "date": "2022-04-14 (not actually)",
     "type": "FALSE",
     "video": "NA",
     "description": ""
@@ -201,7 +201,7 @@ const completions = [
     "name": "Arcane",
     "imo": 23,
     "aredlDifficulty": 22,
-    "date": "NA",
+    "date": "2022-04-13 (not actually)",
     "type": "FALSE",
     "video": "NA",
     "description": ""
