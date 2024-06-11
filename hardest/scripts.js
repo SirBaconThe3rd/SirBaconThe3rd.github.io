@@ -165,7 +165,7 @@ const completions = [
     "name": "Thanatophobia",
     "imo": 19,
     "aredlDifficulty": 18,
-    "date": "2022-12-04",
+    "date": "2022-04-12",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/vTdWlbenymY",
     "description": ""
