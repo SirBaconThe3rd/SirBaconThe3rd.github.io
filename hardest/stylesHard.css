@@ -4,6 +4,10 @@ body {
     background-attachment: fixed;
     color: white;
 }
+.linkName:hover {
+    color:dodgerblue;
+    text-decoration:underline;
+}
 .noBg {
     margin-left: 310px;
 }
