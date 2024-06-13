@@ -1,18 +1,23 @@
 body {
     margin-top: 20px;
-    font-family: Arial, sans-serif;
-    background-image: url(5197239.svg);
-    background-size: cover;
+    background-image: url(abstract-digital-grid-black-background_53876-97647.jpg);
+    background-attachment: fixed;
     color: white;
 }
 .noBg {
     margin-left: 310px;
 }
 .container {
-    max-width: 900px;
-    text-align:justify;
-    padding: 20px;
-    margin-left: 23%;
+    max-width: 350px;
+    text-align:center;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    margin-top: 55px;
+    left: 15%;
+    transform: translateX(-50%); 
 }
 h1 {
     text-align: center;
@@ -34,6 +39,7 @@ input[type="checkbox"] {
 ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 50px;
 }
 li {
     display: flex; 
@@ -67,4 +73,37 @@ iframe {
     li {
         flex-direction: column;
     }
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 180px;
+    border: none;
+    font-size: large;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    position: absolute;
+    left: 15%;
+    transform: translateX(-50%);
+    height: auto; 
+}
+
+.collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2796"; 
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
 }

@@ -33,7 +33,7 @@ const completions = [
     "date": "2023-12-16",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/_OsrXmBjO5E",
-    "description": ""
+    "description": "This level is insanely hard, I hate it so much"
   },
   {
     "name": "Phonk Town",
@@ -60,7 +60,7 @@ const completions = [
     "date": "2023-08-23",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/IJu-qrsftRo",
-    "description": ""
+    "description": "Perfect extreme for beginners, beat this days after Penombre and just days before Sephtis"
   },
   {
     "name": "Sephtis",
@@ -69,7 +69,7 @@ const completions = [
     "date": "2023-08-28",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/LoeQd1Vj_Bg",
-    "description": ""
+    "description": "Really forgettable level but really fun, 3rd level I beat during that small time that kicked me forward in GD"
   },
   {
     "name": "TROLLMACHINE",
@@ -78,7 +78,7 @@ const completions = [
     "date": "2023-07-04",
     "type": "TRUE",
     "video": "NA",
-    "description": "Recording of completion corrupted"
+    "description": "Recording of completion corrupted, haven't rebeaten on recording since the gameplay is so janky"
   },
   {
     "name": "Cataclysm",
@@ -87,7 +87,7 @@ const completions = [
     "date": "2024-03-29",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/zyw13NlSNk0",
-    "description": ""
+    "description": "Died at the last ship an hour before 2.2 came out, got frustrated and went to bed, missed 2.2 launch."
   },
   {
     "name": "Disruption",
@@ -96,7 +96,7 @@ const completions = [
     "date": "2023-09-01",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/2CQr14NOO2g",
-    "description": "Rebeat February 4th 2024 after original recording corrupted"
+    "description": "Originally fluked from 50% \n Rebeat February 4th 2024 after original recording corrupted"
   },
   {
     "name": "Penombre",
@@ -105,7 +105,7 @@ const completions = [
     "date": "2023-08-19",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/R-3nRMABdJc",
-    "description": ""
+    "description": "This completion was the first of multiple to have been beaten within just a few days, after previous completions taking ages"
   },
   {
     "name": "Niwa",
@@ -114,7 +114,7 @@ const completions = [
     "date": "2023-12-03",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/QAWbnnUd3z4",
-    "description": ""
+    "description": "This took less than a day to beat and I remember being shocked how quickly I had beaten it"
   },
   {
     "name": "Precipitance",
@@ -123,7 +123,7 @@ const completions = [
     "date": "2024-01-13",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/_RTHMG_U0to",
-    "description": ""
+    "description": "Super consistent, banger song, banger gameplay, all around banger level"
   },
   {
     "name": "Lost Love",
@@ -132,7 +132,7 @@ const completions = [
     "date": "2024-05-03",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/D4HwSEWZpLA",
-    "description": ""
+    "description": "Cute little level I beat in about 4 hours for Maymory, was funner than I expected"
   },
   {
     "name": "Penumbra",
@@ -141,7 +141,7 @@ const completions = [
     "date": "2023-12-02",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/hfaPtPdnTNs",
-    "description": ""
+    "description": "This should really be an extreme"
   },
   {
     "name": "R3d Room",
@@ -159,7 +159,7 @@ const completions = [
     "date": "2022-12-29",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/Vn-QAaUTWhA",
-    "description": ""
+    "description": "First extreme I beat that is still an extreme"
   },
   {
     "name": "Thanatophobia",
@@ -168,7 +168,7 @@ const completions = [
     "date": "2022-04-12",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/vTdWlbenymY",
-    "description": ""
+    "description": "beat this when it was an extreme demon as a jump from (I think) Nine Circles"
   },
   {
     "name": "The End",
@@ -177,7 +177,7 @@ const completions = [
     "date": "2022-04-14 (not actually)",
     "type": "FALSE",
     "video": "NA",
-    "description": ""
+    "description": "one of the first hard levels i played, and one of the longest"
   },
   {
     "name": "Swarm",
@@ -185,8 +185,8 @@ const completions = [
     "aredlDifficulty": 20,
     "date": "2023-12-14",
     "type": "FALSE",
-    "video": "https://www.youtube.com/embed/vKfVpXwWTEo",
-    "description": ""
+    "video": "https://www.youtube.com/embed/KfVpXwWTEo",
+    "description": "fun level :) fluked from 39 when it was still extreme"
   },
   {
     "name": "Leyak",
@@ -195,7 +195,7 @@ const completions = [
     "date": "2023-11-13",
     "type": "FALSE",
     "video": "NA",
-    "description": ""
+    "description": "A bit overrated but still good"
   },
   {
     "name": "Arcane",
@@ -204,7 +204,7 @@ const completions = [
     "date": "2022-04-13 (not actually)",
     "type": "FALSE",
     "video": "NA",
-    "description": ""
+    "description": "Forgettable but fun"
   }
 ]
 let filteredCompletions = completions;
@@ -226,7 +226,7 @@ function renderList(items) {
               const listItem = document.createElement("li");
               listItem.innerHTML = `
                   <div>
-                      <img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px;">
+                      <img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px; cursor: pointer;">
                   </div>
                   <div class="info">
                       <h3>${item.name}</h3>
@@ -259,7 +259,7 @@ function renderList(items) {
                     <img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px;">
                 </div>
                 <div class="info">
-                    <h3>${item.name}</h3>
+                    <a href="${watchUrl}">${item.name}</a>
                     <p>Date: ${item.date}</p>
                     <p>${item.description}</p>
                 </div>
@@ -286,6 +286,7 @@ function renderList(items) {
         });
     });
 }
+
 function extractVideoId(embedLink) {
     const regExp = /(?:\/|v=)([a-zA-Z0-9_-]{11})(?:\?|&|$)/;
     const match = embedLink.match(regExp);
@@ -341,3 +342,19 @@ function changeDifficulty() {
 document.addEventListener("DOMContentLoaded", function () {
     renderList(filteredCompletions);
 });
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var container = this.nextElementSibling;
+    if (container.style.maxHeight){
+      container.style.maxHeight = null;
+    } else {
+      container.style.maxHeight = container.scrollHeight + "px";
+    }
+  });
+}
