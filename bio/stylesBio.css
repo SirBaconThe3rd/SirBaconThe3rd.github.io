@@ -1,3 +1,9 @@
+body{
+    background-image: url(45184470_9147451.jpg);
+    background-attachment: fixed;
+    color: white;
+    background-size: cover;
+}
 .pointercrate{
     position: fixed;
     width: 500px;
@@ -24,9 +30,4 @@
     position: fixed;
     margin-left: 170px;
     text-shadow: 2px 2px #000000;
-}
-body {
-    background-image: url(7854057_1014.svg);
-    background-size: cover;
-    color: white
 }
