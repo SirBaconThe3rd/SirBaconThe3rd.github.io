@@ -3,6 +3,7 @@ body {
     background-image: url(abstract-digital-grid-black-background_53876-97647.jpg);
     background-attachment: fixed;
     color: white;
+    background-size: cover;
 }
 .linkName:hover {
     color:dodgerblue;
