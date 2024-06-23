@@ -4,3 +4,10 @@ body{
     color: white;
     background-size: cover;
 }
+.thxList{
+    font-size: 20px;
+}
+.thx{
+    position:absolute;
+    bottom:0;
+}
