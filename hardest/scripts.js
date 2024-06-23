@@ -21,7 +21,7 @@ function renderList(items) {
 				</div>
 				<div class="info">
 					<h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color:inherit">${item.name}</a></h3>
-					<p>Placement: ${difficulty} - Date: ${item.date}</p>
+					<p>Placement: ${difficulty} - Date: ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -31,7 +31,7 @@ function renderList(items) {
 			listItem.innerHTML = `
 				<div class="noBg">
 					<h3>${item.name}</h3>
-					<p>Difficulty: ${difficulty} - Date: ${item.date}</p>
+					<p>Difficulty: ${difficulty} - Date: ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -51,7 +51,7 @@ function renderList(items) {
                 </div>
                 <div class="info">
                     <h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color: inherit">${item.name}</a></h3>
-                    <p>Date: ${item.date}</p>
+                    <p>Date: ${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
@@ -61,7 +61,7 @@ function renderList(items) {
             listItem.innerHTML = `
                 <div class="noBg">
                     <h3>${item.name}</h3>
-                    <p>Date: ${item.date}</p>
+                    <p>Date: ${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
@@ -132,7 +132,7 @@ function changeDifficulty() {
 }
 
 
-fetch('./completions.json')
+fetch('https://wiglett.ca/hardest/completions.json')
 	.then((response) => {
 		return response.json();
 	})

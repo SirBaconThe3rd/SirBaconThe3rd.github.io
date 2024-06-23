@@ -23,15 +23,17 @@ body {
     margin-top: 55px;
     left: 15%;
     transform: translateX(-50%); 
+    resize: none;
 }
 h1 {
     text-align: center;
 }
 .hardest2Index{
     color: black;
-    margin-top: 20px;
-    margin-left: 26%;
+    /*margin-top: 20px;
+    margin-left: 26%;*/
     position: absolute;
+    resize: none;
 }
 form {
     text-align: center;
@@ -56,6 +58,7 @@ li {
     width: 100%; 
     max-width: 600px; 
     background-color: rgba(255, 255, 255, 0.2);
+    resize: none;
 }
 li h3 {
     margin: 0;
