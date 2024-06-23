@@ -1,8 +1,17 @@
 const completions = [
   {
-    "name": "Deflective",
+    "name": "Carcano",
     "imo": 1,
-    "aredlDifficulty": 4,
+    "aredlDifficulty": 2,
+    "date": "2024-06-17",
+    "type": "TRUE",
+    "video": "https://www.youtube.com/embed/2AKkk0cEdik",
+    "description": "fun cognition style extreme :) new hardest"
+  },
+  {
+    "name": "Deflective",
+    "imo": 2,
+    "aredlDifficulty": 5,
     "date": "2023-10-13",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/kqZQ0rc6n9A",
@@ -10,8 +19,8 @@ const completions = [
   },
   {
     "name": "Prismatic Haze",
-    "imo": 2,
-    "aredlDifficulty": 3,
+    "imo": 3,
+    "aredlDifficulty": 4,
     "date": "2023-09-16",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/3YfbaFRRZwE",
@@ -19,8 +28,8 @@ const completions = [
   },
   {
     "name": "Inflective",
-    "imo": 3,
-    "aredlDifficulty": 2,
+    "imo": 4,
+    "aredlDifficulty": 3,
     "date": "2023-10-15",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/SOPujjSkAeM",
@@ -28,8 +37,8 @@ const completions = [
   },
   {
     "name": "Semicolon 3",
-    "imo": 4,
-    "aredlDifficulty": 8,
+    "imo": 5,
+    "aredlDifficulty": 9,
     "date": "2023-12-16",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/_OsrXmBjO5E",
@@ -37,7 +46,7 @@ const completions = [
   },
   {
     "name": "Phonk Town",
-    "imo": 5,
+    "imo": 6,
     "aredlDifficulty": 1,
     "date": "2023-11-22",
     "type": "TRUE",
@@ -46,8 +55,8 @@ const completions = [
   },
   {
     "name": "Reflective",
-    "imo": 6,
-    "aredlDifficulty": 5,
+    "imo": 7,
+    "aredlDifficulty": 6,
     "date": "2023-02-01",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/Uf3pEUz-HV4",
@@ -55,8 +64,8 @@ const completions = [
   },
   {
     "name": "Reverence",
-    "imo": 7,
-    "aredlDifficulty": 7,
+    "imo": 8,
+    "aredlDifficulty": 8,
     "date": "2023-08-23",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/IJu-qrsftRo",
@@ -64,8 +73,8 @@ const completions = [
   },
   {
     "name": "Sephtis",
-    "imo": 8,
-    "aredlDifficulty": 13,
+    "imo": 9,
+    "aredlDifficulty": 14,
     "date": "2023-08-28",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/LoeQd1Vj_Bg",
@@ -73,8 +82,8 @@ const completions = [
   },
   {
     "name": "TROLLMACHINE",
-    "imo": 9,
-    "aredlDifficulty": 6,
+    "imo": 10,
+    "aredlDifficulty": 7,
     "date": "2023-07-04",
     "type": "TRUE",
     "video": "NA",
@@ -82,8 +91,8 @@ const completions = [
   },
   {
     "name": "Cataclysm",
-    "imo": 10,
-    "aredlDifficulty": 10,
+    "imo": 11,
+    "aredlDifficulty": 11,
     "date": "2024-03-29",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/zyw13NlSNk0",
@@ -91,17 +100,17 @@ const completions = [
   },
   {
     "name": "Disruption",
-    "imo": 11,
-    "aredlDifficulty": 9,
+    "imo": 12,
+    "aredlDifficulty": 10,
     "date": "2023-09-01",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/2CQr14NOO2g",
-    "description": "Originally fluked from 50% \n Rebeat February 4th 2024 after original recording corrupted"
+    "description": "Originally fluked from 50% \\n Rebeat February 4th 2024 after original recording corrupted"
   },
   {
     "name": "Penombre",
-    "imo": 12,
-    "aredlDifficulty": 11,
+    "imo": 13,
+    "aredlDifficulty": 12,
     "date": "2023-08-19",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/R-3nRMABdJc",
@@ -109,17 +118,17 @@ const completions = [
   },
   {
     "name": "Niwa",
-    "imo": 13,
-    "aredlDifficulty": 14,
-    "date": "2023-12-03",
+    "imo": 14,
+    "aredlDifficulty": 15,
+    "date": "2023-03-12",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/QAWbnnUd3z4",
     "description": "This took less than a day to beat and I remember being shocked how quickly I had beaten it"
   },
   {
     "name": "Precipitance",
-    "imo": 14,
-    "aredlDifficulty": 16,
+    "imo": 15,
+    "aredlDifficulty": 17,
     "date": "2024-01-13",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/_RTHMG_U0to",
@@ -127,8 +136,8 @@ const completions = [
   },
   {
     "name": "Lost Love",
-    "imo": 15,
-    "aredlDifficulty": 12,
+    "imo": 16,
+    "aredlDifficulty": 13,
     "date": "2024-05-03",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/D4HwSEWZpLA",
@@ -136,16 +145,16 @@ const completions = [
   },
   {
     "name": "Penumbra",
-    "imo": 16,
-    "aredlDifficulty": 19,
-    "date": "2023-12-02",
+    "imo": 17,
+    "aredlDifficulty": 20,
+    "date": "2023-02-12",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/hfaPtPdnTNs",
     "description": "This should really be an extreme"
   },
   {
     "name": "R3d Room",
-    "imo": 17,
+    "imo": 18,
     "aredlDifficulty": "NA",
     "date": "2023-12-28",
     "type": "FALSE",
@@ -154,8 +163,8 @@ const completions = [
   },
   {
     "name": "Acu",
-    "imo": 18,
-    "aredlDifficulty": 15,
+    "imo": 19,
+    "aredlDifficulty": 16,
     "date": "2022-12-29",
     "type": "TRUE",
     "video": "https://www.youtube.com/embed/Vn-QAaUTWhA",
@@ -163,8 +172,8 @@ const completions = [
   },
   {
     "name": "Thanatophobia",
-    "imo": 19,
-    "aredlDifficulty": 18,
+    "imo": 20,
+    "aredlDifficulty": 19,
     "date": "2022-04-12",
     "type": "FALSE",
     "video": "https://www.youtube.com/embed/vTdWlbenymY",
@@ -172,26 +181,26 @@ const completions = [
   },
   {
     "name": "The End",
-    "imo": 20,
-    "aredlDifficulty": 17,
-    "date": "2022-04-14 (not actually)",
+    "imo": 21,
+    "aredlDifficulty": 18,
+    "date": "NA",
     "type": "FALSE",
     "video": "NA",
     "description": "one of the first hard levels i played, and one of the longest"
   },
   {
     "name": "Swarm",
-    "imo": 21,
-    "aredlDifficulty": 20,
+    "imo": 22,
+    "aredlDifficulty": 21,
     "date": "2023-12-14",
     "type": "FALSE",
-    "video": "https://www.youtube.com/embed/KfVpXwWTEo",
+    "video": "https://www.youtube.com/embed/vKfVpXwWTEo",
     "description": "fun level :) fluked from 39 when it was still extreme"
   },
   {
     "name": "Leyak",
-    "imo": 22,
-    "aredlDifficulty": 21,
+    "imo": 23,
+    "aredlDifficulty": 22,
     "date": "2023-11-13",
     "type": "FALSE",
     "video": "NA",
@@ -199,12 +208,21 @@ const completions = [
   },
   {
     "name": "Arcane",
-    "imo": 23,
-    "aredlDifficulty": 22,
-    "date": "2022-04-13 (not actually)",
+    "imo": 24,
+    "aredlDifficulty": 23,
+    "date": "NA",
     "type": "FALSE",
     "video": "NA",
     "description": "Forgettable but fun"
+  },
+  {
+    "name": "My Time",
+    "imo": 25,
+    "aredlDifficulty": 24,
+    "date": "2024-06-16",
+    "type": "FALSE",
+    "video": "https://www.youtube.com/embed/SkmhJCAaygQ",
+    "description": "omori demon"
   }
 ]
 let filteredCompletions = completions;
