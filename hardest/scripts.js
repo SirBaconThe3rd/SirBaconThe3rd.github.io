@@ -20,8 +20,8 @@ function renderList(items) {
 					<img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px; cursor: pointer;">
 				</div>
 				<div class="info">
-					<h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color:inherit">${item.name}</a></h3>
-					<p>Placement: ${difficulty} - Date: ${item.convdate}</p>
+					<h1 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color:inherit">${item.name}</a></h1>
+					<p>Placement: ${difficulty} - ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -30,8 +30,8 @@ function renderList(items) {
 			const listItem = document.createElement("li");
 			listItem.innerHTML = `
 				<div class="noBg">
-					<h3>${item.name}</h3>
-					<p>Difficulty: ${difficulty} - Date: ${item.convdate}</p>
+					<h1>${item.name}</h1>
+					<p>Difficulty: ${difficulty} - ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -50,8 +50,8 @@ function renderList(items) {
                     <img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px;">
                 </div>
                 <div class="info">
-                    <h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color: inherit">${item.name}</a></h3>
-                    <p>Date: ${item.convdate}</p>
+                    <h1 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color: inherit">${item.name}</a></h1>
+                    <p>${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
@@ -60,8 +60,8 @@ function renderList(items) {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
                 <div class="noBg">
-                    <h3>${item.name}</h3>
-                    <p>Date: ${item.convdate}</p>
+                    <h1>${item.name}</h1>
+                    <p>${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
