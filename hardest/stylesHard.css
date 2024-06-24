@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Vanilla Cake;
+    src: url("Vanilla Cake.otf");
+}
+
 body {
     margin-top: 20px;
     background-image: url(abstract-digital-grid-black-background_53876-97647.jpg);
