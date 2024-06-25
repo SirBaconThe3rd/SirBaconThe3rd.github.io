@@ -15,13 +15,15 @@ function renderList(items) {
 			const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 			const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
 			const listItem = document.createElement("li");
+            const levelID = item["levelID"];
+            listItem.id = levelID;
 			listItem.innerHTML = `
 				<div>
 					<img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px; cursor: pointer;">
 				</div>
-				<div class="info">
-					<h1 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color:inherit">${item.name}</a></h1>
-					<p>Placement: ${difficulty} - ${item.convdate}</p>
+				<div class="info" id="${levelID}_info">
+					<h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color:inherit">${item.name}</a></h3>
+					<p>Placement: ${difficulty} - Date: ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -30,8 +32,8 @@ function renderList(items) {
 			const listItem = document.createElement("li");
 			listItem.innerHTML = `
 				<div class="noBg">
-					<h1>${item.name}</h1>
-					<p>Difficulty: ${difficulty} - ${item.convdate}</p>
+					<h3>${item.name}</h3>
+					<p>Difficulty: ${difficulty} - Date: ${item.convdate}</p>
 					<p>${item.description}</p>
 				</div>
 			`;
@@ -45,13 +47,14 @@ function renderList(items) {
             const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
             const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
             const listItem = document.createElement("li");
+            const levelID = item["levelID"];
             listItem.innerHTML = `
                 <div>
                     <img src="${thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video="${watchUrl}" style="width: 300px; height: 169px;">
                 </div>
-                <div class="info">
-                    <h1 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color: inherit">${item.name}</a></h1>
-                    <p>${item.convdate}</p>
+                <div class="info" id="${levelID}_info">
+                    <h3 class="linkName"><a href="${watchUrl}" style="text-decoration:none; color: inherit">${item.name}</a></h3>
+                    <p>Date: ${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
@@ -60,8 +63,8 @@ function renderList(items) {
             const listItem = document.createElement("li");
             listItem.innerHTML = `
                 <div class="noBg">
-                    <h1>${item.name}</h1>
-                    <p>${item.convdate}</p>
+                    <h3>${item.name}</h3>
+                    <p>Date: ${item.convdate}</p>
                     <p>${item.description}</p>
                 </div>
             `;
@@ -77,6 +80,7 @@ function renderList(items) {
             window.open(videoUrl, '_blank');
         });
     });
+    get_aredl_positions();
 }
 
 function extractVideoId(embedLink) {
@@ -109,6 +113,7 @@ function sortList(criteria) {
         }
     });
     renderList(filteredCompletions);
+    get_aredl_positions();
 }
 
 function toggleFilter() {
@@ -119,6 +124,7 @@ function toggleFilter() {
         filteredCompletions = completions;
     }
     renderList(filteredCompletions);
+    get_aredl_positions();
     //document.getElementById('sortCriteria').getElementsByTagName('option')[0].selected = true;
     //document.getElementById('difficultyDropdown').getElementsByTagName('option')[0].selected = true;
 }
@@ -129,10 +135,11 @@ function changeDifficulty() {
     renderList(filteredCompletions);
     document.getElementById('sortCriteria').getElementsByTagName('option')[0].selected = true;
     sortList('hard');
+    get_aredl_positions();
 }
 
 
-fetch('https://wiglett.ca/hardest/completions.json')
+fetch('./completions.json')
 	.then((response) => {
 		return response.json();
 	})
@@ -146,7 +153,7 @@ fetch('https://wiglett.ca/hardest/completions.json')
 	//});
 
 let filteredCompletions;
-let currentDifficulty;
+let currentDifficulty = 'imo';
 
 function do_everything_else() {
     currentDifficulty = 'imo';
@@ -155,16 +162,62 @@ function do_everything_else() {
 
     var coll = document.getElementsByClassName("collapsible");
 
-    for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var container = this.nextElementSibling;
-        if (container.style.maxHeight){
-            container.style.maxHeight = null;
-        } else {
-            container.style.maxHeight = container.scrollHeight + "px";
-        }
-    });
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var container = this.nextElementSibling;
+            if (container.style.maxHeight){
+                container.style.maxHeight = null;
+            } else {
+                container.style.maxHeight = container.scrollHeight + "px";
+            }
+        });
     }
-    
+    get_aredl_positions();
+}
+
+// THIS WAS OTHER FILE BUT I WAS LAZY TO MAKE IT ACTUALLY WORK SO ITS HERE AND TERRIBLY OPTIMIZED.
+
+const AREDL_API = "https://api.aredl.net/api/"; //https://api.aredl.net/api/aredl/levels/64148732?two_player=false&records=false&creators=false&verification=false&packs=false
+const LEVEL_ENDPOINTS = AREDL_API + "aredl/levels/";
+
+function aredl_request(levelid) {
+    try {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", `${LEVEL_ENDPOINTS.concat(levelid.toString())}?two_player=false&records=false&creators=false&verification=false&packs=false`);
+        xhr.send();
+        xhr.responseType = "json";
+
+        xhr.onload = () => {
+            if (xhr.status != 200) {
+            } else if (xhr.readyState == 4 && xhr.status == 200) {
+                const data = xhr.response;
+                const card = document.getElementById(`${levelid.toString()}_info`);
+                if (card == null) return;
+                else if (document.getElementById(levelid.toString() + "_p_exists") != null) return;
+
+                card.innerHTML = card.innerHTML +`<p id="${levelid.toString()}_p_exists" style="color: #8a9ea6AA;">Aredl position: ${data["position"]}</p>`
+            }
+        };
+    } catch (err) {
+        //return;
+    }
+}
+
+
+let completionsnt;
+
+function get_aredl_positions() {
+    fetch('./completions.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            completionsnt = data;
+            completionsnt.forEach(element => {
+                if (element["aredlDifficulty"] != "NA" && element["type"] == "TRUE" && element["name"] != "Phonk Town") {
+                    aredl_request(element["levelID"]);
+                }
+            });
+        })
 }
